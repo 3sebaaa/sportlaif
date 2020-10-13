@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+  <head>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/css/bootstrap.min.css" integrity="sha384-DhY6onE6f3zzKbjUPRc2hOzGAdEf4/Dz+WJwBvEYL/lkkIsI3ihufq9hk9K4lVoK" crossorigin="anonymous">
+
+	  <title>SportLaif</title>
+  </head>
+  <body>
+	  <header class="bg-success text-white bg-gradient p-3 text-center">
+		  <h3>SportLaif</h3>
+	  </header>
+	  <main class="container-fluid mt-5">
+		  <section class="row">
+			  <div class="col-sm-12 col-md-6 col-lg-4">
+				  <div class="card">
+					  <div class="card-header bg-success bg-gradient text-white">
+						  <span>Registrar cliente</span>
+					  </div>
+					  <div class="card-body">
+						  <div id="errores-div"></div>
+						  <div class="form-group mb-3">
+							  <label for="nombre-txt">Nombre</label>
+							  <input type="text" id="nombre-txt" class="form-control">
+						  </div>
+						  <div class="form-group mb-3">
+							  <label for="plan-select">Plan</label>
+							  <select id="plan-select" class="form-select">
+								  <option value="0">Seleccionar plan</option>
+								  <option value="1">3 veces por semana</option>
+								  <option value="2">2 veces por semana</option>
+								  <option value="3">Ilimitado</option>
+							  </select>
+						  </div>
+						  <div class="form-group mb-3">
+							  <label for="medio-select">Medio de pago</label>
+							  <select id="medio-select" class="form-select">
+								  <option value="0">Seleccionar medio de pago</option>
+								  <option value="1">Efectivo</option>
+								  <option value="2">Tarjeta</option>
+							  </select>
+						  </div>
+						  <div class="form-group mb-3">
+							  <label for="estado-sw">Estado de pago</label>
+							  <div class="form-check form-switch">
+								  <input class="form-check-input" type="checkbox" id="estado-sw">
+								  <label class="form-check-label" for="estado-sw" id="estado-lbl">Adeudado</label>
+							  </div>
+						  </div>
+					  </div>
+					  <div class="card-footer">
+						  <button type="button" id="agregar-btn" class="btn btn-info btn-block text-white">Agregar</button>
+					  </div>
+				  </div>
+			  </div>
+		  </section>
+		  <h2 class="mt-3">Lista de clientes</h2>
+		  <section class="row" id="clientes-lista"></section>
+	  </main>
+	
+	  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.bundle.min.js" integrity="sha384-BOsAfwzjNJHrJ8cZidOg56tcQWfp6y72vEJ8xQ9w6Quywb24iOsW913URv1IS4GD" crossorigin="anonymous"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	  <script src="js/init.js"></script>
+	</body>
+</html>
